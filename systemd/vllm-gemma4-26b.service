@@ -1,0 +1,14 @@
+[Unit]
+Description=vLLM Gemma-4 26B Uncensored (NVFP4)
+After=docker.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+WorkingDirectory=%h/dgx-spark-vllm-gemma4-26b-uncensored
+ExecStart=%h/dgx-spark-vllm-gemma4-26b-uncensored/scripts/start.sh
+ExecStop=-docker stop vllm-gemma4-26b
+ExecStop=-docker rm vllm-gemma4-26b
+
+[Install]
+WantedBy=default.target
