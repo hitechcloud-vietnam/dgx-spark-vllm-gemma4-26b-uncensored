@@ -1,0 +1,6 @@
+Test,Prompt,Tokens,Time(s),Tokens/s
+1,"What is machine learning? Explain briefly.",200,4.428235197,45.16
+2,"Write a Python function to calculate factorial using recursion.",200,4.428278104,45.16
+3,"Explain quantum computing in simple terms.",200,4.442994911,45.01
+4,"Describe the process of photosynthesis.",200,4.431465592,45.13
+5,"What are the main differences between HTTP and HTTPS?",200,4.433335769,45.11
