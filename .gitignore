@@ -1,0 +1,37 @@
+# Ignore generated files
+*.log
+*.tmp
+*.swp
+*.swo
+*~
+
+# Ignore Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Ignore benchmark outputs (keep the committed ones)
+benchmarks/*.csv
+!benchmarks/results-gemma4-26b.csv
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.iml
+
+# Ignore model caches (never commit these)
+models/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+
+# Ignore Docker artifacts
+.dockerignore
